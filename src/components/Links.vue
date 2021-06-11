@@ -16,6 +16,11 @@ export default defineComponent({
         url: 'https://github.com/simonorono',
         newTab: true
       },
+      {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/simonorono',
+        newTab: true
+      }
     ]
 
     return { links }
