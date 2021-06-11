@@ -24,7 +24,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="space-x-2 text-right">
+  <div class="space-x-2">
     <template v-for="link in links">
       <a
         v-if="link.newTab"

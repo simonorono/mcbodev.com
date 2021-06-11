@@ -16,8 +16,10 @@ export default defineComponent({
       <h1 class="text-5xl font-bold">Simón Oroño</h1>
       <h2 class="font-medium">Computer Scientist & Software Developer</h2>
     </div>
+
     <hr class="mt-2 mb-1">
-    <Links />
+
+    <Links class="sm:text-right" />
   </div>
 
 </template>
