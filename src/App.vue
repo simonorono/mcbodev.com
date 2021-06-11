@@ -11,7 +11,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="min-h-screen max-w-screen-lg mx-auto">
+  <div class="max-w-screen-lg mx-auto">
     <div class="mx-2 lg:mx-0">
       <header>
         <Header />
