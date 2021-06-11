@@ -12,8 +12,14 @@ export default defineComponent({
 
 <template>
   <div class="min-h-screen max-w-screen-lg mx-auto">
-    <header class="mx-2 lg:mx-0">
-      <Header />
-    </header>
+    <div class="mx-2 lg:mx-0">
+      <header>
+        <Header />
+      </header>
+
+      <main>
+        <router-view />
+      </main>
+    </div>
   </div>
 </template>
