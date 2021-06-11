@@ -36,6 +36,7 @@ export default defineComponent({
         :href="link.url"
         class="underline"
         target="_blank"
+        rel="noreferrer"
       >
         {{ link.name }}
       </a>
