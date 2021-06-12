@@ -4,7 +4,7 @@ import Header from '../components/Header'
 interface Props {
   h1: string,
   h2?: string,
-  children: ReactNode
+  children?: ReactNode
 }
 
 export default function Template(props: Props) {
