@@ -20,13 +20,21 @@ export default function Projects() {
       >
         <BackToIndex />
 
-        <div className="pt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map(project => (
-            <ProjectCard
-              key={project.name}
-              project={project}
-            />
-          ))}
+        <div className="mt-14 text-lg space-y-8">
+          <p className="sm:max-w-lg">
+            Besides writing code for a living, I also like writing code for
+            recreational purposes. Here's a list of projects I've written
+            in my free time.
+          </p>
+
+          <div className="pt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {projects.map(project => (
+              <ProjectCard
+                key={project.name}
+                project={project}
+              />
+            ))}
+          </div>
         </div>
       </Template>
     </>
