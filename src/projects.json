@@ -3,7 +3,7 @@
     "name": "RDex",
     "vcs": "https://github.com/simonorono/rdex",
     "url": "https://rdex.mcbodev.com",
-    "description": "Pokédex web application.",
+    "description": "Pokédex web application with support for all main game regions. Not yet fully complete.",
     "wip": true,
     "tags": ["typescript", "react", "redux", "tailwind", "vite", "pokeapi"]
   },
