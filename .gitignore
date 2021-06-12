@@ -247,3 +247,4 @@ sketch
 # .pnp.*
 
 # End of https://www.toptal.com/developers/gitignore/api/jetbrains+all,node,yarn,react
+public/sitemap.xml
