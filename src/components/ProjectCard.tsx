@@ -1,5 +1,6 @@
 import React from 'react'
 import { CodeIcon, GlobeIcon } from '@heroicons/react/outline'
+import { NewTabLink } from './NewTabLink'
 
 import Tag from './Tag'
 
@@ -15,21 +16,23 @@ export default function ProjectCard(props: Props) {
       <h3 className="text-2xl font-medium">{name}</h3>
 
       <div className="space-y-3 sm:space-y-0">
-        <a
+        <NewTabLink
           className="flex items-center space-x-1"
           href={url}
+          name={`${name} Website`}
         >
-          <GlobeIcon className="h-5 w-5" />
+          <GlobeIcon className="h-5 w-5" aria-hidden='true' />
           <span className="underline"> Website</span>
-        </a>
+        </NewTabLink>
 
-        <a
+        <NewTabLink
           className="flex items-center space-x-1"
           href={vcs}
+          name={`${name} Repository`}
         >
-          <CodeIcon className="h-5 w-5" />
+          <CodeIcon className="h-5 w-5" aria-hidden='true' />
           <span className="underline"> Repository</span>
-        </a>
+        </NewTabLink>
       </div>
 
       <p className="flex-grow pt-2">{description}</p>

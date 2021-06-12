@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { NewTabLink } from './NewTabLink'
 
 const links = [
   {
@@ -37,15 +38,11 @@ export default function Links() {
       ))}
 
       {links.filter(_ => _.newTab).map(link => (
-        <a
+        <NewTabLink
           href={link.url}
-          target='_blank'
-          rel='noreferrer'
-          className='underline'
           key={link.name}
-        >
-          {link.name}
-        </a>
+          name={link.name}
+        />
       ))}
     </div>
   )
