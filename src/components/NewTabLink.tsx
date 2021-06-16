@@ -16,7 +16,7 @@ export function NewTabLink(props: Props) {
       aria-label={`${name} (opens in new window)`}
       target='_blank'
       rel='noreferrer'
-      className={`underline ${className}`}
+      className={`underline ${className || ''}`}
     >
       {children || name}
     </a>
