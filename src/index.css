@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+[data-bold-on-hover] {
+  @apply hover:font-bold;
+
+  display: inline-flex;
+  flex-direction: column;
+
+  &::after {
+    content: attr(data-bold-on-hover);
+
+    @apply h-0 invisible overflow-hidden select-none pointer-events-none font-bold;
+  }
+
+  @media speech {
+    @apply hidden;
+  }
+}
