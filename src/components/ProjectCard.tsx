@@ -15,9 +15,9 @@ export default function ProjectCard(props: Props) {
     <div className="flex flex-col border p-2 space-y-4">
       <h3 className="text-2xl font-medium">{name}</h3>
 
-      <div className="space-y-3 sm:space-y-0">
+      <div className="flex flex-col items-baseline space-y-3 sm:space-y-0">
         <NewTabLink
-          className="flex items-center space-x-1"
+          className="inline-flex items-center space-x-1 hover:font-bold"
           href={url}
           name={`${name} Website`}
         >
@@ -26,7 +26,7 @@ export default function ProjectCard(props: Props) {
         </NewTabLink>
 
         <NewTabLink
-          className="flex items-center space-x-1"
+          className="inline-flex items-center space-x-1 hover:font-bold"
           href={vcs}
           name={`${name} Repository`}
         >
