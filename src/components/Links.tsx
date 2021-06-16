@@ -32,6 +32,7 @@ export default function Links() {
           key={link.name}
           to={link.url}
           className="underline"
+          data-bold-on-hover={link.name}
         >
           {link.name}
         </Link>
