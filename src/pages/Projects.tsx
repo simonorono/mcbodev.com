@@ -17,6 +17,7 @@ export default function Projects() {
 
       <Template
         h1="Projects"
+        h2="by Simón Oroño"
       >
         <BackToIndex />
 
