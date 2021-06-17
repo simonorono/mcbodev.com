@@ -5,10 +5,11 @@ interface Props {
   href: string,
   className?: string,
   children?: ReactNode,
+  boldOnHover?: boolean
 }
 
 export function NewTabLink(props: Props) {
-  const { name, href, className, children } = props
+  const { name, href, className, children, boldOnHover } = props
 
   return (
     <a
@@ -17,6 +18,7 @@ export function NewTabLink(props: Props) {
       target='_blank'
       rel='noreferrer'
       className={`underline ${className || ''}`}
+      data-bold-on-hover={boldOnHover ? name : null}
     >
       {children || name}
     </a>

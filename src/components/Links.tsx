@@ -43,6 +43,7 @@ export default function Links() {
           href={link.url}
           key={link.name}
           name={link.name}
+          boldOnHover={true}
         />
       ))}
     </div>
