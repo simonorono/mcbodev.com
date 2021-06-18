@@ -25,7 +25,7 @@ export default function Template(props: Props) {
         <footer>
           <hr className="mt-8" />
 
-          <div className="my-4 text-right">
+          <div className="my-4 text-right pb-12 sm:pb-0">
             <NewTabLink
               href={"https://github.com/simonorono/mcbodev.com"}
               name="Source code for this page."
