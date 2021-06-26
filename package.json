@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export -o dist",
+    "build": "next build && next export -o dist && next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -19,6 +19,7 @@
     "autoprefixer": "^10.2.6",
     "eslint": "7.29.0",
     "eslint-config-next": "11.0.1",
+    "next-sitemap": "^1.6.124",
     "postcss": "^8.3.5",
     "postcss-nesting": "^8.0.1",
     "tailwindcss": "^2.2.4",
