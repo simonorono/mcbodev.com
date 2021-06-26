@@ -4,11 +4,6 @@ import NewTabLink from './new-tab-link'
 
 const links = [
   {
-    name: 'twitter',
-    url: 'https://twitter.com/simonorono',
-    newTab: true,
-  },
-  {
     name: 'github',
     url: 'https://github.com/simonorono',
     newTab: true
