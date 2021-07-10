@@ -42,7 +42,7 @@ export default function Template({ h1, h2, children }: Props) {
 
             <div className="my-4 text-right pb-12 sm:pb-0">
               <NewTabLink
-                href={"https://github.com/simonorono/mcbodev.com"}
+                href={"https://gitlab.com/simonorono/simonorono.gitlab.io"}
                 name="Source code for this page."
                 className="text-sm"
               />
