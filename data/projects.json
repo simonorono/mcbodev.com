@@ -9,7 +9,7 @@
   },
   {
     "name": "VGPhoto",
-    "vcs": "https://github.com/simonorono/fussel",
+    "vcs": "https://gitlab.com/simonorono/fussel",
     "url": "https://vgphoto.mcbodev.com",
     "description": "Web gallery. Used to display photos I've taken in video games.",
     "wip": true,
@@ -17,7 +17,7 @@
   },
   {
     "name": "Rixel",
-    "vcs": "https://github.com/simonorono/rixel",
+    "vcs": "https://gitlab.com/simonorono/rixel",
     "url": "https://rixel.mcbodev.com",
     "description": "Web application for pixelating images. Transformation is done in the browser. No server side code.",
     "wip": false,
