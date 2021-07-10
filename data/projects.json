@@ -1,7 +1,7 @@
 [
   {
     "name": "RDex",
-    "vcs": "https://github.com/simonorono/rdex",
+    "vcs": "https://gitlab.com/simonorono/rdex",
     "url": "https://rdex.mcbodev.com",
     "description": "Pokédex web application with support for all main game regions. Not yet fully complete.",
     "wip": true,
