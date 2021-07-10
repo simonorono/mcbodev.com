@@ -8,14 +8,6 @@
     "tags": ["typescript", "react", "redux", "tailwind", "vite", "pokeapi"]
   },
   {
-    "name": "VGPhoto",
-    "vcs": "https://gitlab.com/simonorono/fussel",
-    "url": "https://vgphoto.mcbodev.com",
-    "description": "Web gallery. Used to display photos I've taken in video games.",
-    "wip": true,
-    "tags": ["python", "react", "photography", "video games"]
-  },
-  {
     "name": "Rixel",
     "vcs": "https://gitlab.com/simonorono/rixel",
     "url": "https://rixel.mcbodev.com",
