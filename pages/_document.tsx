@@ -6,9 +6,11 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head />
 
-        <Main />
+        <body>
+          <Main />
 
-        <NextScript />
+          <NextScript />
+        </body>
       </Html>
     )
   }
