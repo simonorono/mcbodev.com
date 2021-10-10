@@ -6,16 +6,20 @@ const links = [
   {
     name: 'github',
     url: 'https://github.com/simonorono',
-    newTab: true
+    newTab: true,
   },
   {
     name: 'linkedin',
     url: 'https://www.linkedin.com/in/simonorono',
-    newTab: true
+    newTab: true,
   },
   {
     name: 'projects',
-    url: '/projects'
+    url: '/projects',
+  },
+  {
+    name: 'social',
+    url: '/social',
   }
 ]
 
