@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Layout from '../components/layout'
 import BackToIndex from '../components/back-to-index'
+import FixedSizeImage from '../components/fixed-size-image'
 import NewTabLink from '../components/new-tab-link'
 import { title } from '../utils'
 
@@ -86,6 +87,15 @@ export default function Social() {
           <FriendCode
             title="Switch Friend Code"
             code="SW-6250-6376-2138"
+          />
+
+          <FixedSizeImage
+            src="/mii.png"
+            alt="Simón Oroño's Mii"
+            width={150}
+            height={150}
+            imageClassName="border border-gray-200 rounded-full"
+            containerClassName="mx-auto sm:mx-0"
           />
         </div>
       </Layout>
