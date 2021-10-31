@@ -3,10 +3,7 @@
 @tailwind utilities;
 
 [data-bold-on-hover] {
-  @apply hover:font-bold;
-
-  display: inline-flex;
-  flex-direction: column;
+  @apply hover:font-bold inline-flex flex-col;
 
   &::after {
     content: attr(data-bold-on-hover);
