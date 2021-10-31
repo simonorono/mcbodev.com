@@ -6,7 +6,7 @@ export default function BackToIndex() {
     <div className="mt-8 sm:mt-0">
       <Link href="/" passHref>
         <a className="hover:font-bold">
-          <span>&lt;- </span><span className="underline">go back</span>
+          &lt;- go back
         </a>
       </Link>
     </div>
