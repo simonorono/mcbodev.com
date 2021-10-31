@@ -5,6 +5,19 @@ import BackToIndex from '../components/back-to-index'
 import NewTabLink from '../components/new-tab-link'
 import { title } from '../utils'
 
+interface FriendCodeProps {
+  title: string,
+  code: string,
+}
+
+function FriendCode({ title, code }: FriendCodeProps) {
+  return (
+    <p>
+      <b>{title}</b>:<br /><span className="font-mono whitespace-nowrap">{code}</span>
+    </p>
+  )
+}
+
 export default function Social() {
   const twitterLink = (
     <NewTabLink
@@ -12,10 +25,6 @@ export default function Social() {
       name="@simonorono"
       href="https://twitter.com/simonorono"
     />
-  )
-
-  const discordUsername = (
-    <span className="font-bold whitespace-nowrap">simonorono#7279</span>
   )
 
   const ggAppLink = (
@@ -26,11 +35,19 @@ export default function Social() {
     />
   )
 
-  const photomodeProfile = (
+  const photomodeLink = (
     <NewTabLink
       className="font-bold"
       name="photomode.io"
       href="https://photomode.io/profile/t15k8gpUj5PKRQ1AiK4Aeh9hfOB3"
+    />
+  )
+
+  const pokedexTrackerLink = (
+    <NewTabLink
+      className="font-bold"
+      name="Pokédex Tracker"
+      href="https://pokedextracker.com/u/simonorono"
     />
   )
 
@@ -47,15 +64,29 @@ export default function Social() {
       >
         <BackToIndex />
 
-        <div className="mt-14 text-lg space-y-8 sm:max-w-lg">
+        <div className="mt-14 text-lg space-y-6 sm:max-w-lg">
           <p>
-            I'm on Twitter as {twitterLink}. I can also be found on Discord as {discordUsername}.
+            The only social network I'm active on is Twitter and my handle is {twitterLink}.
           </p>
 
           <p>
-            My gaming backlog can be found on the {ggAppLink}. Occasionally, I also share screenshots of games I play
-            on {photomodeProfile}.
+            I can also be found on {ggAppLink}, {photomodeLink} and {pokedexTrackerLink}.
           </p>
+
+          <FriendCode
+            title="Discord"
+            code="simonorono#7279"
+          />
+
+          <FriendCode
+            title="3DS Friend Code"
+            code="0147-6024-1272"
+          />
+
+          <FriendCode
+            title="Switch Friend Code"
+            code="SW-6250-6376-2138"
+          />
         </div>
       </Layout>
     </>
