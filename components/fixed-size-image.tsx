@@ -1,4 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import LazyLoad from 'vanilla-lazyload'
+
+if (process.browser && !document.lazyLoadInstance) {
+  document.lazyLoadInstance = new LazyLoad({
+    callback_loaded: el => el.classList.remove('opacity-0'),
+    elements_selector: '[data-src]',
+    unobserve_completed: true,
+    use_native: true,
+    threshold: 100,
+  })
+}
 
 interface FixedSizeImageProps {
   src: string,
@@ -19,6 +30,10 @@ export default function FixedSizeImage(props: FixedSizeImageProps) {
     imageClassName,
   } = props
 
+  useEffect(() => {
+    process.browser && document.lazyLoadInstance.update()
+  }, [])
+
   const imageContainerStyle = {
     'maxWidth': `${width}px`,
     'maxHeight': `${height}px`,
@@ -27,11 +42,11 @@ export default function FixedSizeImage(props: FixedSizeImageProps) {
   return (
     <div style={imageContainerStyle} className={containerClassName}>
       <img
-        src={src}
+        data-src={src}
         alt={alt}
         width={width}
         height={height}
-        className={imageClassName}
+        className={`transition-opacity opacity-0 ${imageClassName}`}
       />
     </div>
   )

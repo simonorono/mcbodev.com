@@ -6,3 +6,7 @@ interface Project {
   tags: string[],
   wip: boolean,
 }
+
+interface Document {
+  lazyLoadInstance: any
+}
