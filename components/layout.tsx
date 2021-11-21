@@ -36,18 +36,6 @@ export default function Template({ h1, h2, children }: Props) {
           <main className="flex-grow">
             {children}
           </main>
-
-          <footer>
-            <hr className="mt-4" />
-
-            <div className="my-4 text-right sm:pb-0">
-              <NewTabLink
-                href={"https://github.com/simonorono/mcbodev.com"}
-                name="Source code for this page."
-                className="text-sm"
-              />
-            </div>
-          </footer>
         </div>
       </div>
     </>
