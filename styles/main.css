@@ -10,10 +10,8 @@
 
     @apply h-0 invisible overflow-hidden select-none pointer-events-none font-bold;
   }
-}
 
-@media speech {
-  [data-bold-on-hover] {
+  @media speech {
     @apply hidden;
   }
 }
