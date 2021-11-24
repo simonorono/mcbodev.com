@@ -16,7 +16,7 @@ export default function Header(props: Props) {
         <h2 className="font-medium">{h2}</h2>
       </div>
 
-      <hr className="mt-2 mb-1" />
+      <hr className="mt-2 mb-1 border-gray-200" />
 
       <Links />
     </div>
